@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+    <!-- Engrane exterior -->
+    <path d="M50 5
+           A45 45 0 1 1 49.9999 5
+           M50 15
+           A35 35 0 1 0 50.0001 15"
+          fill="#1B1464"
+          stroke="none"/>
+    
+    <!-- Segmento rojo -->
+    <path d="M50 5
+           A45 45 0 0 1 95 50
+           L85 50
+           A35 35 0 0 0 50 15"
+          fill="#8B0D37"
+          stroke="none"/>
+    
+    <!-- Detalles del engrane -->
+    <g fill="none" stroke="#1B1464" stroke-width="2">
+        <line x1="50" y1="5" x2="50" y2="15"/>
+        <line x1="85" y1="50" x2="95" y2="50"/>
+        <line x1="50" y1="85" x2="50" y2="95"/>
+        <line x1="15" y1="50" x2="5" y2="50"/>
+    </g>
+    
+    <!-- Círculo central -->
+    <circle cx="50" cy="50" r="10"
+            fill="#1B1464"
+            stroke="none"/>
+</svg>
