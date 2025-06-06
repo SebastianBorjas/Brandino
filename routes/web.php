@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,3 +39,8 @@ Route::get('/bolsa-trabajo', function () {
 Route::get('/renta-salas', function () {
     return view('renta');
 });
+
+Route::get('/cursos', [CourseController::class, 'index']);
+Route::get('/cursos/{id}', [CourseController::class, 'show']);
+Route::get('/cursos/{id}/comprar', [PaymentController::class, 'checkout']);
+Route::post('/procesar-pago', [PaymentController::class, 'process']);
